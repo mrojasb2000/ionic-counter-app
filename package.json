@@ -9,6 +9,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test:watch": "ng test --watch",
+    "test:coverage": "ng test --coverage",
+    "test:ci": "ng test --watch=false --coverage",
     "lint": "ng lint"
   },
   "private": true,
@@ -33,6 +36,7 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
+    "@angular-builders/jest": "^20.0.0",
     "@angular-devkit/build-angular": "^20.0.0",
     "@angular-eslint/builder": "^20.0.0",
     "@angular-eslint/eslint-plugin": "^20.0.0",
@@ -44,20 +48,17 @@
     "@angular/language-service": "^20.0.0",
     "@capacitor/cli": "8.3.1",
     "@ionic/angular-toolkit": "^12.0.0",
-    "@types/jasmine": "~5.1.0",
+    "@types/jest": "^30.0.0",
     "@typescript-eslint/eslint-plugin": "^8.18.0",
     "@typescript-eslint/parser": "^8.18.0",
     "eslint": "^9.16.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsdoc": "^48.2.1",
     "eslint-plugin-prefer-arrow": "1.2.2",
-    "jasmine-core": "~5.1.0",
-    "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.2.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.1.0",
+    "jest": "^30.3.0",
+    "jest-preset-angular": "^16.1.4",
+    "jsdom": "^26.1.0",
+    "ts-jest": "^29.4.9",
     "typescript": "~5.9.0"
   },
   "description": "An Ionic project"
